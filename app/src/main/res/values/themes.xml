@@ -9,8 +9,48 @@
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
+
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+
+        <!--  TextView  -->
+        <item name="fontFamily">@font/karla_italic</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--  OnLight Themes  -->
+
+    <style name="Theme.PokemonDictionary.OnLight" parent="Theme.PokemonDictionary">
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="android:statusBarColor">@color/background_light</item>
+        <item name="android:textColor">@color/primary_on_light</item>
+        <item name="tint">@color/secondary_on_light</item>
+        <item name="backgroundColor">@color/primary_on_light</item>
+    </style>
+
+    <style name="Text.Primary.OnLight" parent="Theme.PokemonDictionary.OnLight">
+        <item name="android:textColor">@color/primary_on_light</item>
+    </style>
+
+    <style name="Text.Secondary.OnLight" parent="Theme.PokemonDictionary.OnLight">
+        <item name="android:textColor">@color/secondary_on_light</item>
+    </style>
+
+    <!--  OnDark Themes  -->
+
+    <style name="Theme.PokemonDictionary.OnDark" parent="Theme.PokemonDictionary">
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:textColor">@color/primary_on_dark</item>
+        <item name="tint">@color/secondary_on_dark</item>
+        <item name="backgroundColor">@color/primary_on_dark</item>
+    </style>
+
+    <style name="Text.Primary.OnDark" parent="Theme.PokemonDictionary.OnLight">
+        <item name="android:textColor">@color/primary_on_dark</item>
+    </style>
+
+    <style name="Text.Secondary.OnDark" parent="Theme.PokemonDictionary.OnLight">
+        <item name="android:textColor">@color/secondary_on_dark</item>
     </style>
 </resources>
